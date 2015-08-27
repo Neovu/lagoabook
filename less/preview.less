@@ -6,11 +6,14 @@ html, body {
 body,html{
     height:100%;
 }
- 
+
 iframe{
     border:0;
     width: 100%;
     height: 100%;
+}
+.hidden{
+    display: none;
 }
 .wowbook {
     color : #d0004b;
@@ -71,10 +74,9 @@ nav {
     left: 0;
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 5px;
     z-index: 2147483647;
-    zoom: 1;
-
+    zoom: 1; 
     li {
     }
     a {
@@ -88,6 +90,12 @@ nav {
         white-space: nowrap;
         overflow : hidden;
     }
+    #bars    { 
+        background-image: url(../images/icons/bars.png); 
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     #zoomin    { background-image: url(../images/icons/zoom_in.png); }
     #zoomout   { background-image: url(../images/icons/zoom_out.png); }
     #first     { background-image: url(../images/icons/arrow_double_left.png); }
@@ -95,6 +103,7 @@ nav {
     #next      { background-image: url(../images/icons/arrow_right.png); }
     #back      { background-image: url(../images/icons/arrow_left.png); }
     #slideshow { background-image: url(../images/icons/slideshow_play.png); }
+    #back      { background-image: url(../images/icons/arrow_left.png); }
     #slideshow.wowbook-disabled { background-image: url(../images/icons/slideshow_pause.png); }
     #flipsound { background-image: url(../images/icons/sound_on.png); }
     #flipsound.wowbook-disabled { background-image: url(../images/icons/sound_off.png); }
@@ -223,13 +232,13 @@ nav {
         margin: 0;
     }
 }
- 
+
 
 .wowbook-right .easy {
     background-position: right top;
 }
 
- 
+
 .wowbook-right {
     .design {
         background-position: right top;
@@ -393,7 +402,7 @@ nav {
         margin-bottom: 0.7em;
     }
 }
- 
+
 .last_cover{
 
     background: white url("../images/BUILD/svg/pagina-000.svg") no-repeat;
