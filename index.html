@@ -29,10 +29,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
        
         <!-- CSS : implied media="all" -->
+        <link href="css/opensans.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/style.css?v=2">
         <link rel="stylesheet" href="./wow_book/wow_book.css" type="text/css" />
         <link rel="stylesheet" type="text/css" href="css/preview.css">
-        <link href="css/opensans.css" rel="stylesheet" type="text/css"/>
+        
         <!-- Uncomment if you are specifically targeting less enabled mobile browsers
         <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
 
@@ -93,18 +94,19 @@
                 for (var i = 2; i < 10; i++) {
                    // $('#anais').append('<div data-double="true" id=pagina-00' + i + '> </div>');
                  //   $('#pagina-00' + i + '').load('images/BUILD/pagina-00' + i + '.svg');
-                   $('#anais').append('<div data-double="true" ><img src="images/BUILD/pagina-00' + i + '.png" /></div>');
+                  // $('#anais').append('<div data-double="true" ><img src="images/BUILD/pagina-00' + i + '.svg" /></div>');
+                   $('#anais').append('<div data-double="true" ><img src="images/BUILD/png/pagina-00' + i + '.png" width="1024" height="768"/></div>');
               
                 }
                 for (var i = 10; i < 100; i++) {
                     // $('#anais').append('<div data-double="true" id=pagina-0' + i + '> </div>');
                    // $('#pagina-0' + i + '').load('images/BUILD/pagina-0' + i + '.svg');
-                    $('#anais').append('<div data-double="true" ><img src="images/BUILD/pagina-0' + i + '.png" /></div>');
+                    $('#anais').append('<div data-double="true" ><img src="images/BUILD/png/pagina-0' + i + '.png" /></div>');
                 }
                 for (var i = 100; i < 126; i++) {
                    //  $('#anais').append('<div data-double="true" id=pagina-' + i + '> </div>');
                    // $('#pagina-' + i + '').load('images/BUILD/pagina-' + i + '.svg');
-                   $('#anais').append('<div data-double="true" ><img src="images/BUILD/pagina-' + i + '.png" /></div>');
+                   $('#anais').append('<div data-double="true" ><img src="images/BUILD/png/pagina-' + i + '.png" /></div>');
                 }
                 $('#anais').wowBook({
                     height: 768
